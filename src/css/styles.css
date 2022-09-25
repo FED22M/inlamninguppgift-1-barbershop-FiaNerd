@@ -23,8 +23,6 @@ body{
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
     "logo header header  menu"
-    /* "logo . . ." 
-    ". . . menu"  */
     "main main main  main" 
     "footer footer footer footer"; 
 }
