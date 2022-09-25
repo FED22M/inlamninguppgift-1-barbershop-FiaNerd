@@ -24,7 +24,7 @@ body{
     grid-template-rows: 4em 1fr 10em;
     grid-template-areas:
         "header"
-        "main "
+        "main"
         "footer";
 }
 header{
@@ -37,6 +37,7 @@ header{
     grid-column: 1 / 5;
     height: 4em;
     top: 0em;
+    z-index: 2;
 }
 .nav-container{
     display: flex;
@@ -93,6 +94,25 @@ main{
     grid-area: main;
     background-color: var(--main-background);
 }
+.hero-container{
+    /* background-image: url("/src/img/barbershop.jpg"); */
+   display: flex;
+   width: 100%;
+   top: 0;
+}
+.title-hero{
+    position: absolute;
+    color: var(--white-color);
+}
+.hero-img{
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    position: relative;
+    object-fit: cover;
+}
 
 footer{
     grid-area: footer;
@@ -139,5 +159,11 @@ footer{
         visibility: visible;
         cursor: pointer;
       } 
+    
+}
 
+@media screen and (max-width: 400px){
+    .hero-img{
+        height: calc(100vh - 7vh);
+      }
 }
