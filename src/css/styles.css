@@ -29,6 +29,8 @@ body{
 }
 header{
     display: grid;
+    position: fixed;
+    width: 100vw;
     grid-area: header;
     align-items: center;
     background-color: var(--black-color);
@@ -36,7 +38,7 @@ header{
     height: 4em;
     top: 0em;
 }
-.header-container{
+.nav-container{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -55,12 +57,19 @@ header{
     color: var(--white-color);
     text-decoration: none;
 }
-#btn-menu{
+.btn-hamburger{
     justify-content: flex-end;
     color: #86817f;
     text-transform: uppercase;
     grid-column: 4 / 5;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
 }
+.menu{
+    display: flex;
+}
+
 .main-nav{
     display: flex;
     gap: 1.4em;
@@ -79,6 +88,7 @@ header{
     color: var(--orange);
    
 }
+
 main{
     grid-area: main;
     background-color: var(--main-background);
@@ -88,4 +98,46 @@ footer{
     grid-area: footer;
     color: var(--white-color);
     background-color: var(--black-color);
+}
+
+@media screen and (max-width:740px){
+    .nav-container{
+        padding: 0 1em;
+        justify-content: space-between;
+    }
+    .btn-hamburger{
+        position: relative;
+        visibility: visible;
+        display: flex;
+        opacity: 1;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+     .menu {
+        position: absolute;
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        background-color: #1e1e1e;
+        top: 70%;
+        right: 0;
+    }
+  
+    .main-nav{
+        flex-direction: column;
+        padding: 16px 30px;
+        background-color: #1e1e1e;
+    }
+    .nav-link{
+        font-size: 1.2rem;
+    }
+    .btn-hamburger.menu-open + .menu {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        cursor: pointer;
+      } 
+
 }
