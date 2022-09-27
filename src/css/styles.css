@@ -115,8 +115,8 @@ main{
 
 .banner-text-content {
     position: relative;
-    top: 39%;
-    left: 3%;
+    margin-top: 15em;
+    margin-left: 1em;
 }
 .title-banner{
     font-family: var(--headlines);
@@ -131,6 +131,7 @@ main{
     text-transform: uppercase;
     font-weight: 900;
     display: block;
+    margin-bottom: 0.4em;
 }
 .banner-headline > span{
     -webkit-text-fill-color: transparent;
@@ -146,10 +147,18 @@ main{
     font-size: 1.1rem;
     line-height: 1.5em;
 }
+.banner-link-container{
+    margin-top: 12em;
+}
 .banner-link{
     color: var(--gold-color);;
+    font-size: 0.98rem;
+    border: 2px solid var(--gold-color);
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    font-weight: 900;
+    cursor: pointer;
 }
-
 
  footer{
     position: relative;
@@ -188,7 +197,7 @@ main{
     .main-nav{
         flex-direction: column;
         padding: 16px 30px;
-        background-color: #1e1e1e;
+        background-color: var(--grey-color-dark);
     }
     .nav-link{
         font-size: 1.2rem;
