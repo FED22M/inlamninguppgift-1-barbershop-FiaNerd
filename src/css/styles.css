@@ -46,7 +46,7 @@ header{
     justify-content: space-around;
     background-color: var(--grey-color-dark);
     height: 2.5em;
-    outline: 3px dashed var(--grey-color-dark);
+    outline: 2px dashed var(--grey-color-dark);
     outline-offset: 0.44em;
     margin-bottom: 0.4em;
     width: 100%;
@@ -118,9 +118,6 @@ main{
     top: 39%;
     left: 3%;
 }
-span{
-    display: inline-block;
-}
 .title-banner{
     font-family: var(--headlines);
     color: var(--gold-color);
@@ -138,6 +135,7 @@ span{
 .banner-headline > span{
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px;
+    display: inline-block;
 }
 .banner-text{
     color: var(--white-color);
