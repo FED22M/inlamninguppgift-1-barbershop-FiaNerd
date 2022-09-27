@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 :root{
+    /* Colors: */
     --white-color:#fff;
     --black-color: #000001;
     --grey-color-dark: #0d0c0d;
@@ -11,6 +12,7 @@
     --beige-color: #ebe8de;
     --main-background: #eae8de;
     
+    /* Fonts: */
     --headlines: 'Barlow Semi Condensed', sans-serif;
 }
 html,
@@ -136,7 +138,6 @@ main{
 .banner-headline > span{
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px;
-    display: inline-block;
 }
 .banner-text{
     color: var(--white-color);
