@@ -159,13 +159,12 @@ main{
     cursor: pointer;
 }
 
-/* TESTAR */
 .service-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 25em;
+    height: 24.5em;
     justify-content: center;
 }
 .box1,
@@ -182,8 +181,12 @@ main{
 .box2-title,
 .box3-title
 .box4-title{
+    text-transform: uppercase;
+    font-family: var(--headlines);
+    font-size: 2rem;
+    font-weight: 600;
     color: var(--white-color);
-    line-height: 3.5em;
+    line-height: 2em;
 }
 .box1-text,
 .box2-text,
@@ -205,7 +208,7 @@ main{
     flex-direction: row;
     position: absolute;
     justify-content: center;
-    top: 750px;
+    top: 756px;
     width: 100%;
 }
 .image-container3{
@@ -221,7 +224,7 @@ main{
     flex-direction: row;
     position: absolute;
     justify-content: center;
-    top: 1560px;
+    top: 1550px;
     width: 100%;
 }
 .barber-img1,
@@ -235,90 +238,6 @@ main{
     position: absolute;
     top: 407px;
 }
-
-
-/* .service-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-
-.box1,
-.box3 {
-   background-color: #be925b;
-   height: 20em;
-}
-.box2,
-.box4{
-   background-color: #b78649;
-}
-.image-container{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    justify-content: center;
-    z-index: 1;
-    width: 100%;
-}
-.barber-img1{
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.barber-img2{
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    position: relative;
-top: 400px;
-}
-
-.box2-text {
-    position: relative;
-    top: 200px;
-}
-
-.barber-img3{
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    position: relative;
-    top: 250px;
-}
-
-.box3-test {
-    position: relative;
-    top: 150px;
-}
-
-.barber-img3{
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.barber-img4{
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-.box-text{
-    display: flex;
-    flex-direction: column; 
-    text-align: center;
-}
-.box-text h2 p{
-    justify-content: center;
-    align-self: center;
-} */
-
 
  footer{
      bottom: 0;
