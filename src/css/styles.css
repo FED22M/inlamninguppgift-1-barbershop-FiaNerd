@@ -73,9 +73,7 @@ header{
 }
 .menu{
     display: flex;
-
 }
-
 .main-nav{
     display: flex;
     gap: 1.4em;
@@ -162,21 +160,17 @@ main{
 }
 
  footer{
-    /* display: flex;
-    flex-direction: column; */
-     line-height: 2em;
      bottom: 0;
      width: 100%;
-     color: var(--white-color);
      background-color: var(--black-color);
 
 } 
 .icon-container{
-    display: flex;
-    margin: 0 1em;
-    margin-bottom: 1em;
+    display: grid;
+    grid-template-columns: repeat(3, 8%);
+    margin: 0 0 0.7em 1em;
     padding-top: 1em;
-   gap: 1.2em;
+    gap: 1.2em;
 }
 .fa-twitter,
 .fa-facebook,
@@ -187,8 +181,42 @@ main{
     width: 1.6em;
     text-align: center;
     line-height: 1.6em;
-    color: #fff;
+    color: var(--white-color);
     border-radius: 0.8em; 
+}
+.footer-grid-container{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    margin: 0 1em;
+    padding-bottom: 2em;
+}
+.footer-grid-container h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: var(--headlines);
+    color: var(--white-color);
+    line-height: 4em;
+}
+.footer-info li{
+  
+    color: #b6b5b4;
+    line-height: 2.2em;
+}
+.icon-list li{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1em;
+    justify-content: flex-start;
+    align-items: center;
+}
+.fa-map,
+.fa-phone,
+.fa-paper-plane{
+    color: var(--gold-color);
+}
+
+.icon-text{
+    color: #b6b5b4;
 }
 
 @media screen and (max-width:740px){
