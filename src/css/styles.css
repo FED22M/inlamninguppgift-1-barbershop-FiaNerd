@@ -267,6 +267,15 @@ main{
         visibility: visible;
         cursor: pointer;
       } 
-    
+}
+
+@media only screen and (min-width: 740px)
+{
+      /* FOOTER */
+      .footer-grid-container{
+        grid-template-columns: auto auto auto;
+        /* margin: 0 1em;
+        padding-bottom: 2em; */
+    }
 }
 
