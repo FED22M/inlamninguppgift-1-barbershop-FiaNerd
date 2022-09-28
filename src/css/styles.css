@@ -6,7 +6,7 @@
 :root{
     /* Colors: */
     --white-color:#fff;
-    --black-color: #000001;
+    --black-color: #0a0600;
     --grey-color-dark: #0d0c0d;
     --gold-color: #bf925b;
     --beige-color: #ebe8de;
@@ -192,15 +192,24 @@ main{
 }
 .footer-grid-container h3{
     text-transform: uppercase;
+    font-size: 1.4rem;
     font-weight: 700;
     font-family: var(--headlines);
     color: var(--white-color);
     line-height: 4em;
 }
 .footer-info li{
-  
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: flex-start;
+    align-items: center;
     color: #b6b5b4;
     line-height: 2.2em;
+    grid-gap: 0.5em;
+}
+.fa-angle-right{
+    font-size: 1.4rem;
+    font-weight: 900;
 }
 .icon-list li{
     display: grid;
