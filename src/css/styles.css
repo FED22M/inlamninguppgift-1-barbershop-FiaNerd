@@ -282,12 +282,13 @@ main{
       /* FOOTER */
       .icon-container{
         width: 400px;
+        margin: 0 5em;
     }
       .footer-grid-container{
-        grid-template-columns: auto auto auto auto;
-        gap: 2em;
-        width: 900px;
-        justify-items: center;
+        grid-template-columns: repeat(4, auto);
+        gap: 4em;
+        max-width: 1000px;
+        margin: auto;
     }
     .footer-desktop-barbershop{
        color:#86817f;
