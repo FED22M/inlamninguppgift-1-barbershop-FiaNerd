@@ -217,16 +217,24 @@ main{
     gap: 1em;
     justify-content: flex-start;
     align-items: center;
+    line-height: 2em;
 }
 .fa-map,
 .fa-phone,
 .fa-paper-plane{
     color: var(--gold-color);
 }
-
 .icon-text{
     color: #b6b5b4;
 }
+
+/* DESKTOP */
+.footer-desktop-barbershop {
+    color:#86817f;
+    display: none;
+    visibility: hidden;
+    /* opacity: 0; */
+ }
 
 @media screen and (max-width:740px){
     .nav-container{
@@ -267,6 +275,25 @@ main{
         visibility: visible;
         cursor: pointer;
       } 
-    
+}
+
+@media screen and (min-width: 740px)
+{
+      /* FOOTER */
+      .icon-container{
+        width: 400px;
+        margin: 0 5em;
+    }
+      .footer-grid-container{
+        grid-template-columns: repeat(4, auto);
+        gap: 4em;
+        max-width: 1000px;
+        margin: auto;
+    }
+    .footer-desktop-barbershop{
+       color:#86817f;
+       visibility: visible;
+       display: block;
+    }
 }
 
