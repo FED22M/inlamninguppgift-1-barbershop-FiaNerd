@@ -178,17 +178,17 @@ main{
     padding-top: 1em;
    gap: 1.2em;
 }
-.fa {
+.fa-twitter,
+.fa-facebook,
+.fa-instagram{
     color: var(--white-color);
     background-color: #be925b;
-    font-size: 1.6em;
+    font-size: 1.3em;
     width: 1.6em;
     text-align: center;
     line-height: 1.6em;
     color: #fff;
     border-radius: 0.8em; 
-   
-   
 }
 
 @media screen and (max-width:740px){
