@@ -7,7 +7,7 @@
     /* Colors: */
     --white-color:#fff;
     --black-color: #0a0600;
-    --grey-color-dark: #0d0c0d;
+    --grey-color-dark: #333333;
     --gold-color: #bf925b;
     --beige-color: #ebe8de;
     --main-background: #eae8de;
@@ -165,6 +165,7 @@ main{
     align-items: center;
     text-align: center;
     justify-content: center;
+    margin-bottom: 1.3em;
 }
 
 .box1,
@@ -207,8 +208,6 @@ main{
     line-height: 2em;
     max-width: 90%;
 }
-
-
 .img-container{
     display: flex;
     flex-direction: column;
@@ -231,6 +230,74 @@ main{
     align-items: center;
     position: relative;
 } 
+.about-container{
+  display: grid;
+  grid-template-rows: 40% 40%;
+  max-width: 90%;
+  max-height: 100%;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+  
+}
+.image-about-container {
+    /* object-fit: cover; */
+}
+.img-about{
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+.about-title{
+    font-family: var(--headlines);
+    color: var(--gold-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    gap: 2em;
+}
+.about-subtitle{
+    font-weight: var(--headlines);
+    color: var(--grey-color-dark);
+    font-size: 1.2rem;
+    text-transform:uppercase;
+    font-weight: 700;
+}
+.about-text{
+    margin-bottom: 3em;
+}
+.about-calender-container{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--gold-color);
+    gap: 1em;
+    width: 60%;
+    padding: 1em;
+    align-items: center;
+}
+.fa-calendar{
+    font-size: 2.1rem;
+    background-color: #b6b5b4;
+    height: 3%;
+    border-radius: 50%;
+    vertical-align: middle;
+    padding: 0.5em;
+}
+.calender-text {
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-weight: 600;
+}
+.years{
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1em;
+}
+.experience{
+    line-height: 1.2em;
+    display: block;
+    line-height: 0.5em;
+}
 
  footer{
      bottom: 0;
@@ -239,6 +306,7 @@ main{
 
 } 
 .icon-container{
+    color: var(--white-color);
     display: grid;
     grid-template-columns: repeat(3, 8%);
     margin: 0 0 0.7em 1em;
@@ -361,6 +429,11 @@ main{
         top: 46em;
         justify-content: space-evenly;
     }
+    .about-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+      }
       /* FOOTER */
       .icon-container{
         width: 400px;
