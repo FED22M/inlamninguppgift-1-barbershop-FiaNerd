@@ -213,12 +213,11 @@ main{
     display: flex;
     flex-direction: column;
     position: absolute;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    top: 63em;
-    left: 7em;
+    width: 100%;
+    top: 48em;
     gap: 15em;
-    height: 100%;
 }
 .barber-img1,
 .barber-img2,
@@ -231,198 +230,7 @@ main{
     justify-content: center;
     align-items: center;
     position: relative;
-   
 } 
-/* 
-.image-container1{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    justify-content: center;
-    bottom: 480px;
-    width: 100%;
-}
-.image-container2{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    justify-content: center;
-    top: 756px;
-    width: 100%;
-}
-.image-container3{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    justify-content: center;
-    top: 1155px;
-    width: 100%;
-}
-.image-container4{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    justify-content: center;
-    top: 1550px;
-    width: 100%;
-}
-.barber-img1,
-.barber-img2,
-.barber-img3,
-.barber-img4{
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    position: absolute;
-    top: 407px;
-}  */
-
-
-@media screen and (min-width: 740px){
-    .service-container{
-        flex-direction: row;
-    }
-    .img-container{
-        flex-direction: row;
-        left: 20px;
-        gap: 150px;
-        /* align-items: center;
-        justify-content: center; */
-        width: 100%;
-        justify-content: space-evenly;
-    }
-    .image-container1{
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        top: 10em;
-        position: relative; */
-        /* justify-content: center; */
-        /* left: 60px;
-        top: 800px; */
-        /* top: 800px;
-        margin-left: 100px; */
-       
-    }
-    .image-container2{
-        /* display: flex;
-        flex-direction: column;  
-        position: absolute;  
-        left: 340px;
-        top: 800px; */
-       
-      
-    }
-    .image-container3{  
-        /* display: flex;
-        flex-direction: column;
-        position: absolute; */
-        /* left: 610px;
-        top: 800px; */
-     
-    }
-    .image-container4{
-        /* display: flex;
-        flex-direction: row;
-        position: absolute; */
-        /* left: 880px;
-        top: 800px; */
-
-    }
-    .barber-img1,
-    .barber-img2,
-    .barber-img3,
-    .barber-img4{
-    } 
-    
-}
-
-/* .service{
-    display: flex;
-    flex-direction: row;
-}
-
-.service-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 24.5em;
-    justify-content: center;
-}
-.box1,
-.box3{
-    background-color: #be925b;
-   
-}
-.box2,
-.box4{
-    background-color: #b78649;
-   
-}
-.box1-title,
-.box2-title,
-.box3-title
-.box4-title{
-    text-transform: uppercase;
-    font-family: var(--headlines);
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--white-color);
-    line-height: 2em;
-}
-.box1-text,
-.box2-text,
-.box3-text
-.box4-text{
-    color: var(--white-color);
-    line-height: 2em;
-}
-.image-container1{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    justify-content: center;
-    bottom: 480px;
-    width: 100%;
-}
-.image-container2{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    justify-content: center;
-    top: 756px;
-    width: 100%;
-}
-.image-container3{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    justify-content: center;
-    top: 1155px;
-    width: 100%;
-}
-.image-container4{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    justify-content: center;
-    top: 1550px;
-    width: 100%;
-}
-.barber-img1,
-.barber-img2,
-.barber-img3,
-.barber-img4{
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    position: absolute;
-    top: 407px;
-} */
 
  footer{
      bottom: 0;
@@ -498,7 +306,6 @@ main{
     color:#86817f;
     display: none;
     visibility: hidden;
-    /* opacity: 0; */
  }
 
 @media screen and (max-width:740px){
@@ -544,7 +351,15 @@ main{
 
 @media screen and (min-width: 740px)
 {
-   
+    .service-container{
+        flex-direction: row;
+    }
+    .img-container{
+        flex-direction: row;
+        left: 0;
+        gap: 6em;
+        justify-content: space-evenly;
+    }
       /* FOOTER */
       .icon-container{
         width: 400px;
