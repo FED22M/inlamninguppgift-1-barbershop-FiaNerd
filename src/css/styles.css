@@ -7,7 +7,7 @@
     /* Colors: */
     --white-color:#fff;
     --black-color: #0a0600;
-    --grey-color-dark: #333333;
+    --grey-color-dark: #1d1b1a;
     --gold-color: #bf925b;
     --gold-color-dark: #b78649;
     --beige-color: #ebe8de;
@@ -466,7 +466,6 @@ main{
         display: none;
         opacity: 0;
         visibility: hidden;
-        background-color: #1e1e1e;
         top: 70%;
         right: 0;
     }
@@ -474,6 +473,10 @@ main{
         flex-direction: column;
         padding: 16px 30px;
         background-color: var(--grey-color-dark);
+        width: 100vw;
+        height: 50vh;
+        text-align: center;
+        justify-content: center;
     }
     .nav-link{
         font-size: 1.2rem;
