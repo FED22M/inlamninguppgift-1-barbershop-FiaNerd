@@ -239,6 +239,7 @@ main{
     width: 90%;
     margin: 0 auto;
     gap: 2em;
+    margin-bottom: 2em;
 }
 .image-about-container{
     display: flex;
@@ -302,11 +303,76 @@ main{
     line-height: 0.5em;
 }
 
+.reviwe-box-container{
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    flex-wrap: wrap;
+    gap: 3em;
+    margin: 0 auto;
+    justify-content: center;
+}
+.checked{
+    color: var(--gold-color-dark);
+}
+.reviwe-customer{
+    color: var(--gold-color-dark);
+}
+.reviwe-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.reviwe-title{
+    color: var(--gold-color);
+    font-family: var(--headlines);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.reviwe-big-title{
+    color:var(--grey-color-dark);
+    font-family: var(--headlines);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.8em;
+}
+.reviwe-big-title span{
+    display: block;
+    text-align: center;
+}
+.fa-quote-left{
+    color: var(--white-color);
+    background-color: #be925b;
+    font-size: 0.9em;
+    padding: 0.9em 0.9em;
+    border-radius: 100%;
+    text-align: center;
+}
+.reviwe-1{
+    background-color: var(--white-color);
+    padding: 2em 2em;
+}
+.text-review{
+    font-size: 0.8rem;
+    padding: 0.4em 0 1.1em 0;
+}
+.img-reviwe{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+.customer-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
  footer{
      bottom: 0;
      width: 100%;
      background-color: var(--black-color);
-
 }
 .icon-container{
     color: var(--white-color);
@@ -437,7 +503,6 @@ main{
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        margin-bottom: 2em;
     }
     .text-about-container{
         width: 50%;
@@ -446,12 +511,19 @@ main{
         width: 50vh;
         height: 60vh;
     }
-      .footer-grid-container{
+     .footer-grid-container{
         grid-template-columns: repeat(4, auto);
         gap: 4em;
         max-width: 1000px;
         margin: auto;
     }
+    .reviwe-box-container{
+        display: grid;
+        grid-template-columns: repeat(3, 25%);
+        flex-wrap: wrap;
+        gap: 3em;
+    }
+    
     .footer-desktop-barbershop{
        color:#86817f;
        visibility: visible;
