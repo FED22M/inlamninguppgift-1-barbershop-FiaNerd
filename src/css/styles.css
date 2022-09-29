@@ -12,7 +12,7 @@
     --gold-color-dark: #b78649;
     --beige-color: #ebe8de;
     --main-background: #eae8de;
-    
+
     /* Fonts: */
     --headlines: 'Barlow Semi Condensed', sans-serif;
 }
@@ -22,10 +22,10 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .wrapper{
-    min-height:100vh; 
-    display:flex; 
-    flex-direction:column; 
-    justify-content:space-between;
+    height:100vh;
+    /* display:flex;
+    flex-direction:column;
+    justify-content:space-between; */
 }
 a{
     text-decoration: none;
@@ -58,7 +58,7 @@ header{
     font-size: 2rem;
     text-transform: uppercase;
     font-family: var(--headlines);
-} 
+}
 .logo-home{
     color: var(--white-color);
 }
@@ -84,11 +84,11 @@ header{
 }
 .nav-link{
     color: var(--white-color);
-   
+
 }
 .nav-link:hover{
     color: var(--gold-color);
-   
+
 }
 main{
     flex: 1;
@@ -106,9 +106,9 @@ main{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     background-image: url(/src/img/barbershop.jpg);
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     filter: brightness(35%);
@@ -230,25 +230,27 @@ main{
     justify-content: center;
     align-items: center;
     position: relative;
-} 
+}
+
+
 .about-container{
-  display: grid;
-  grid-template-rows: 40% 40%;
-  max-width: 90%;
-  max-height: 100%;
-  margin: 0 auto;
-  display: grid;
-  gap: 1rem;
-  flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    gap: 2em;
 }
-.image-about-container {
-    /* object-fit: cover; */
+.image-about-container{
+    display: flex;
 }
-.img-about{
-  object-fit: cover;
-  width: 100%;
-  max-height: 100%;
+
+.img-about {
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
+
 .about-title{
     font-family: var(--headlines);
     color: var(--gold-color);
@@ -263,8 +265,8 @@ main{
     text-transform:uppercase;
     font-weight: 700;
 }
-.about-text{
-    margin-bottom: 3em;
+ .about-text{
+   margin-bottom: 2.5em;
 }
 .about-calender-container{
     display: flex;
@@ -283,7 +285,7 @@ main{
     vertical-align: middle;
     padding: 0.5em;
 }
-.calender-text {
+ .calender-text {
     text-transform: uppercase;
     color: var(--white-color);
     font-weight: 600;
@@ -305,7 +307,7 @@ main{
      width: 100%;
      background-color: var(--black-color);
 
-} 
+}
 .icon-container{
     color: var(--white-color);
     display: grid;
@@ -324,7 +326,7 @@ main{
     text-align: center;
     line-height: 1.6em;
     color: var(--white-color);
-    border-radius: 0.8em; 
+    border-radius: 0.8em;
 }
 .footer-grid-container{
     display: grid;
@@ -401,7 +403,7 @@ main{
         top: 70%;
         right: 0;
     }
-  
+
     .main-nav{
         flex-direction: column;
         padding: 16px 30px;
@@ -415,7 +417,7 @@ main{
         opacity: 1;
         visibility: visible;
         cursor: pointer;
-      } 
+      }
 }
 
 @media screen and (min-width: 740px)
@@ -430,15 +432,18 @@ main{
         top: 46em;
         justify-content: space-evenly;
     }
+
     .about-container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
-      }
-      /* FOOTER */
-      .icon-container{
-        width: 400px;
-        margin: 0 5em;
+        display: flex;
+        flex-direction: row;
+        height: 80%;
+        align-items: center;
+    }
+    .text-about-container{
+        width: 50%;
+    }
+    .img-about{
+        height: 80%;
     }
       .footer-grid-container{
         grid-template-columns: repeat(4, auto);
