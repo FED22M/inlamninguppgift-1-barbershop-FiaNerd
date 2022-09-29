@@ -358,6 +358,7 @@ main{
         flex-direction: row;
         left: 0;
         gap: 6em;
+        top: 46em;
         justify-content: space-evenly;
     }
       /* FOOTER */
