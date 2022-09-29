@@ -352,7 +352,7 @@ main{
     border-radius: 7px;
     position: relative;
     height: 13em;
-    width: 20em;
+    max-width: 20em;
 }
 .text-review{
     font-size: 0.8rem;
@@ -524,6 +524,7 @@ main{
         grid-template-columns: repeat(3, 23%);
         gap: 1em;
     }
+   
     
     .footer-desktop-barbershop{
        color:#86817f;
