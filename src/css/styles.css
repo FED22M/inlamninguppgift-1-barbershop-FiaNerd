@@ -239,7 +239,7 @@ main{
     width: 90%;
     margin: 0 auto;
     gap: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 8em;
 }
 .image-about-container{
     display: flex;
@@ -311,11 +311,15 @@ main{
     margin: 0 auto;
     justify-content: center;
 }
+
 .checked{
     color: var(--gold-color-dark);
+    font-size: 0.8em;
 }
 .reviwe-customer{
+    text-transform: uppercase;
     color: var(--gold-color-dark);
+    font-size: 0.8rem;
 }
 .reviwe-container{
     display: flex;
@@ -352,6 +356,7 @@ main{
 .reviwe-1{
     background-color: var(--white-color);
     padding: 2em 2em;
+    border-radius: 7px;
 }
 .text-review{
     font-size: 0.8rem;
@@ -367,6 +372,7 @@ main{
     display: flex;
     flex-direction: row;
     gap: 1em;
+    align-items: center;
 }
 
  footer{
@@ -521,7 +527,7 @@ main{
         display: grid;
         grid-template-columns: repeat(3, 25%);
         flex-wrap: wrap;
-        gap: 3em;
+        gap: 2em;
     }
     
     .footer-desktop-barbershop{
