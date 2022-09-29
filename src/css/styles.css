@@ -7,11 +7,12 @@
     /* Colors: */
     --white-color:#fff;
     --black-color: #0a0600;
-    --grey-color-dark: #0d0c0d;
+    --grey-color-dark: #333333;
     --gold-color: #bf925b;
+    --gold-color-dark: #b78649;
     --beige-color: #ebe8de;
     --main-background: #eae8de;
-    
+
     /* Fonts: */
     --headlines: 'Barlow Semi Condensed', sans-serif;
 }
@@ -21,10 +22,10 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .wrapper{
-    min-height:100vh; 
-    display:flex; 
-    flex-direction:column; 
-    justify-content:space-between;
+    height:100vh;
+    /* display:flex;
+    flex-direction:column;
+    justify-content:space-between; */
 }
 a{
     text-decoration: none;
@@ -57,7 +58,7 @@ header{
     font-size: 2rem;
     text-transform: uppercase;
     font-family: var(--headlines);
-} 
+}
 .logo-home{
     color: var(--white-color);
 }
@@ -83,11 +84,11 @@ header{
 }
 .nav-link{
     color: var(--white-color);
-   
+
 }
 .nav-link:hover{
     color: var(--gold-color);
-   
+
 }
 main{
     flex: 1;
@@ -105,9 +106,9 @@ main{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
     background-image: url(/src/img/barbershop.jpg);
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     filter: brightness(35%);
@@ -165,6 +166,7 @@ main{
     align-items: center;
     text-align: center;
     justify-content: center;
+    margin-bottom: 1.3em;
 }
 
 .box1,
@@ -172,7 +174,7 @@ main{
     display: flex;
     flex-direction: column;
     height: 24.5em;
-    background-color: #be925b;
+    background-color: var(--gold-color);
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -182,7 +184,7 @@ main{
     display: flex;
     flex-direction: column;
     height: 24.5em;
-    background-color: #86817f;
+    background-color: var(--gold-color-dark);
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -207,8 +209,6 @@ main{
     line-height: 2em;
     max-width: 90%;
 }
-
-
 .img-container{
     display: flex;
     flex-direction: column;
@@ -230,15 +230,86 @@ main{
     justify-content: center;
     align-items: center;
     position: relative;
-} 
+}
+
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    gap: 2em;
+}
+.image-about-container{
+    display: flex;
+}
+
+.img-about {
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+    height: 40vh;
+}
+
+.about-title{
+    font-family: var(--headlines);
+    color: var(--gold-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    gap: 2em;
+}
+.about-subtitle{
+    font-weight: var(--headlines);
+    color: var(--grey-color-dark);
+    font-size: 1.2rem;
+    text-transform:uppercase;
+    font-weight: 700;
+}
+ .about-text{
+   margin-bottom: 2.5em;
+}
+.about-calender-container{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--gold-color);
+    gap: 1em;
+    width: 70%;
+    padding: 1em;
+    align-items: center;
+}
+.fa-calendar{
+    font-size: 2.1rem;
+    background-color: #b6b5b4;
+    height: 3%;
+    border-radius: 50%;
+    vertical-align: middle;
+    padding: 0.5em;
+}
+ .calender-text {
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-weight: 600;
+}
+.years{
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1em;
+}
+.experience{
+    line-height: 1.2em;
+    display: block;
+    line-height: 0.5em;
+}
 
  footer{
      bottom: 0;
      width: 100%;
      background-color: var(--black-color);
 
-} 
+}
 .icon-container{
+    color: var(--white-color);
     display: grid;
     grid-template-columns: repeat(3, 8%);
     margin: 0 0 0.7em 1em;
@@ -255,7 +326,7 @@ main{
     text-align: center;
     line-height: 1.6em;
     color: var(--white-color);
-    border-radius: 0.8em; 
+    border-radius: 0.8em;
 }
 .footer-grid-container{
     display: grid;
@@ -332,7 +403,6 @@ main{
         top: 70%;
         right: 0;
     }
-  
     .main-nav{
         flex-direction: column;
         padding: 16px 30px;
@@ -346,7 +416,7 @@ main{
         opacity: 1;
         visibility: visible;
         cursor: pointer;
-      } 
+      }
 }
 
 @media screen and (min-width: 740px)
@@ -361,10 +431,20 @@ main{
         top: 46em;
         justify-content: space-evenly;
     }
-      /* FOOTER */
-      .icon-container{
-        width: 400px;
-        margin: 0 5em;
+
+    .about-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+    .text-about-container{
+        width: 50%;
+    }
+    .img-about{
+        width: 50vh;
+        height: 60vh;
     }
       .footer-grid-container{
         grid-template-columns: repeat(4, auto);
