@@ -167,13 +167,14 @@ main{
     text-align: center;
     justify-content: center;
     margin-bottom: 1.3em;
+    position: relative;
 }
 
 .box1,
 .box3{
     display: flex;
     flex-direction: column;
-    height: 24.5em;
+    height: 22em;
     background-color: var(--gold-color);
     align-items: center;
     text-align: center;
@@ -183,16 +184,16 @@ main{
 .box4{
     display: flex;
     flex-direction: column;
-    height: 24.5em;
+    height: 22em;
     background-color: var(--gold-color-dark);
     align-items: center;
     text-align: center;
     justify-content: center;
 }
-.box1-title,
-.box2-title,
-.box3-title
-.box4-title{
+.box-title,
+.box-title,
+.box-title
+.box-title{
     text-transform: uppercase;
     font-family: var(--headlines);
     font-size: 2rem;
@@ -201,23 +202,13 @@ main{
     line-height: 2em;
     max-width: 90%;
 }
-.box1-text,
-.box2-text,
-.box3-text
-.box4-text{
+.box-text,
+.box-text,
+.box-text
+.box-text{
     color: var(--white-color);
     line-height: 2em;
     max-width: 90%;
-}
-.img-container{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    top: 48em;
-    gap: 15em;
 }
 .barber-img1,
 .barber-img2,
@@ -229,7 +220,8 @@ main{
     object-fit: cover;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: absolute;
+    margin-top: -380px;
 }
 
 
@@ -505,6 +497,9 @@ main{
         gap: 6em;
         top: 46em;
         justify-content: space-evenly;
+    }
+    .box-title{
+        margin-top: 45px;
     }
     .about-container{
         display: flex;
