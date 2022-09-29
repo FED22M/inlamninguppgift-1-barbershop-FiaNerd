@@ -164,18 +164,28 @@ main{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 24.5em;
     justify-content: center;
 }
+
 .box1,
 .box3{
+    display: flex;
+    flex-direction: column;
+    height: 24.5em;
     background-color: #be925b;
-   
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 .box2,
 .box4{
-    background-color: #b78649;
-   
+    display: flex;
+    flex-direction: column;
+    height: 24.5em;
+    background-color: #86817f;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 .box1-title,
 .box2-title,
@@ -187,6 +197,7 @@ main{
     font-weight: 600;
     color: var(--white-color);
     line-height: 2em;
+    max-width: 90%;
 }
 .box1-text,
 .box2-text,
@@ -194,38 +205,19 @@ main{
 .box4-text{
     color: var(--white-color);
     line-height: 2em;
+    max-width: 90%;
 }
-.image-container1{
+
+
+.img-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     position: absolute;
     justify-content: center;
-    bottom: 480px;
+    align-items: center;
     width: 100%;
-}
-.image-container2{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    justify-content: center;
-    top: 756px;
-    width: 100%;
-}
-.image-container3{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    justify-content: center;
-    top: 1155px;
-    width: 100%;
-}
-.image-container4{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    justify-content: center;
-    top: 1550px;
-    width: 100%;
+    top: 48em;
+    gap: 15em;
 }
 .barber-img1,
 .barber-img2,
@@ -235,9 +227,10 @@ main{
     width: 150px;
     height: 150px;
     object-fit: cover;
-    position: absolute;
-    top: 407px;
-}
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} 
 
  footer{
      bottom: 0;
@@ -313,7 +306,6 @@ main{
     color:#86817f;
     display: none;
     visibility: hidden;
-    /* opacity: 0; */
  }
 
 @media screen and (max-width:740px){
@@ -359,6 +351,16 @@ main{
 
 @media screen and (min-width: 740px)
 {
+    .service-container{
+        flex-direction: row;
+    }
+    .img-container{
+        flex-direction: row;
+        left: 0;
+        gap: 6em;
+        top: 46em;
+        justify-content: space-evenly;
+    }
       /* FOOTER */
       .icon-container{
         width: 400px;
