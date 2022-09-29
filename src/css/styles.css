@@ -9,6 +9,7 @@
     --black-color: #0a0600;
     --grey-color-dark: #333333;
     --gold-color: #bf925b;
+    --gold-color-dark: #b78649;
     --beige-color: #ebe8de;
     --main-background: #eae8de;
     
@@ -173,7 +174,7 @@ main{
     display: flex;
     flex-direction: column;
     height: 24.5em;
-    background-color: #be925b;
+    background-color: var(--gold-color);
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -183,7 +184,7 @@ main{
     display: flex;
     flex-direction: column;
     height: 24.5em;
-    background-color: #86817f;
+    background-color: var(--gold-color-dark);
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -238,7 +239,7 @@ main{
   margin: 0 auto;
   display: grid;
   gap: 1rem;
-  
+  flex-wrap: nowrap;
 }
 .image-about-container {
     /* object-fit: cover; */
@@ -270,7 +271,7 @@ main{
     flex-direction: row;
     background-color: var(--gold-color);
     gap: 1em;
-    width: 60%;
+    width: 70%;
     padding: 1em;
     align-items: center;
 }
