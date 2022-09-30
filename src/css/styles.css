@@ -111,7 +111,6 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* filter: brightness(35%); */
 }
 
 .banner-text-content {
@@ -163,9 +162,9 @@ main{
 .service-container{
     display: flex;
     flex-direction: column;
-    /* align-items: center;
+    align-items: center;
     text-align: center;
-    justify-content: center; */
+    justify-content: center;
     margin-bottom: 2em;
     position: relative;
 }
@@ -174,7 +173,7 @@ main{
 .box3{
     display: flex;
     flex-direction: column;
-    height: 22em;
+    height: 23em;
     background-color: var(--gold-color);
     align-items: center;
     text-align: center;
@@ -184,7 +183,7 @@ main{
 .box4{
     display: flex;
     flex-direction: column;
-    height: 22em;
+    height: 23em;
     background-color: var(--gold-color-dark);
     align-items: center;
     text-align: center;
@@ -221,7 +220,7 @@ main{
     justify-content: center;
     align-items: center;
     position: absolute;
-    margin-top: -380px;
+    margin-top: -365px;
 }
 
 
@@ -396,7 +395,6 @@ main{
 }
 .footer-grid-container{
     display: grid;
-    grid-template-rows: auto auto auto;
     margin: 0 1em;
     padding-bottom: 2em;
 }
