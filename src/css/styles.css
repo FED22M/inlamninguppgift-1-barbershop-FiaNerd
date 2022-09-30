@@ -38,7 +38,7 @@ header{
     position: fixed;
     width: 100vw;
     align-items: center;
-    background-color:rgba(10, 6, 0, 0.5);;
+    background-color:rgba(10, 6, 0);;
     height: 4em;
     top: 0;
     z-index: 2;
@@ -96,9 +96,11 @@ main{
 }
 .banner-container{
     display: flex;
+    flex-direction: column;
     position: relative;
     width: 100vw;
     height: 100vh;
+    
 }
 .banner-container::before{
     content: "";
@@ -114,24 +116,27 @@ main{
 }
 
 .banner-text-content {
-    position: relative;
-    margin-top: 15em;
+    display: flex;
+    flex-direction: column;
+    gap: 2.6em;
+    position: absolute;
+    margin-top: 21em;
     margin-left: 1em;
 }
 .title-banner{
     font-family: var(--headlines);
     color: var(--gold-color);
-    font-size: 1.36rem;
+    font-size: 1.05rem;
     text-transform: uppercase;
+    margin-bottom: -2em;
 }
 .banner-headline{
     font-family: var(--headlines);
     color: var(--white-color);
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 900;
     display: block;
-    margin-bottom: 0.4em;
 }
 .banner-headline > span{
     -webkit-text-fill-color: transparent;
@@ -139,15 +144,11 @@ main{
 }
 .banner-text{
     color: var(--white-color);
-    position: absolute;
     align-items:center;
     justify-content: center;
     font-weight: 200;
     font-size: 1.1rem;
     line-height: 1.5em;
-}
-.banner-link-container{
-    margin-top: 12em;
 }
 .banner-link{
     color: var(--gold-color);;
@@ -158,7 +159,6 @@ main{
     font-weight: 500;
     cursor: pointer;
 }
-
 .service-container{
     display: flex;
     flex-direction: column;
@@ -168,7 +168,6 @@ main{
     margin-bottom: 2em;
     position: relative;
 }
-
 .box1,
 .box3{
     display: flex;
@@ -501,6 +500,17 @@ main{
 
 @media screen and (min-width: 740px)
 {
+    header{
+       
+        background-color:rgba(10, 6, 0, 0.5);;
+       
+    }
+    .nav-container{
+        background-color: rgba(51, 51, 51, 0.5);
+        outline: 2px dashed rgba(51, 51, 51, 0.5);
+      
+    }
+
     .service-container{
         flex-direction: row;
     }
