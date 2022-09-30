@@ -427,16 +427,29 @@ main{
     gap: 1em;
     justify-content: flex-start;
     align-items: center;
-    line-height: 2em;
 }
+
 .fa-map,
 .fa-phone,
-.fa-paper-plane{
+.fa-paper-plane
+{
     color: var(--gold-color);
 }
-.icon-text{
-    color: #b6b5b4;
+.fa-map{
+    margin-top: -1.3em;
 }
+
+.icon-text-map,
+.icon-text-phone,
+.icon-text-plane{
+    color: #b6b5b4;
+    line-height: 2em;
+}
+.icon-text-map{
+    line-height: 1.4em;
+    margin-bottom: 0.5em;
+}
+
 
 /* DESKTOP */
 .footer-desktop-barbershop {
@@ -528,7 +541,7 @@ main{
     }
    
     .icon-container{
-        gap: 1.8em;
+        gap: 1.6em;
     }
     .footer-desktop-barbershop{
        color:#86817f;
