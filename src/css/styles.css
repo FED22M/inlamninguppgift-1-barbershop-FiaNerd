@@ -163,10 +163,10 @@ main{
 .service-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center;
     text-align: center;
-    justify-content: center;
-    margin-bottom: 1.3em;
+    justify-content: center; */
+    margin-bottom: 2em;
     position: relative;
 }
 
@@ -378,8 +378,7 @@ main{
 .icon-container{
     color: var(--white-color);
     display: grid;
-    grid-template-columns: repeat(3, 8%);
-    /* margin: 0 0 0.7em 1em; */
+    grid-template-columns: repeat(3, 10%);
     padding-top: 1em;
     gap: 1.2em;
 }
@@ -528,7 +527,9 @@ main{
         gap: 1em;
     }
    
-    
+    .icon-container{
+        gap: 1.8em;
+    }
     .footer-desktop-barbershop{
        color:#86817f;
        visibility: visible;
