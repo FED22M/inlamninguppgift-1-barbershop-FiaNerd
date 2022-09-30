@@ -100,14 +100,12 @@ main{
     position: relative;
     width: 100vw;
     height: 100vh;
-    
 }
 .banner-container::before{
     content: "";
-    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-image: linear-gradient(rgba(33, 6, 6, 0.665), rgba(0, 0, 0, 0.786), rgba(0, 0, 1, 0.487)), url(/src/img/barbershop.jpg);
     background-repeat: no-repeat;
@@ -120,7 +118,7 @@ main{
     flex-direction: column;
     gap: 2.6em;
     position: absolute;
-    margin-top: 21em;
+    top: 38%;
     margin-left: 1em;
 }
 .title-banner{
