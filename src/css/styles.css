@@ -1,5 +1,6 @@
-@import "service.css";
-@import "about.css";
+@import "/src/css/service.css";
+@import "/src/css/about.css";
+@import "/src/css/reviwe.css";
 
 *{
     margin: 0;
@@ -11,6 +12,7 @@
     --white-color:#fff;
     --black-color: #0a0600;
     --grey-color-dark: #1d1b1a;
+    --grey-color-light: #656565;
     --gold-color: #bf925b;
     --gold-color-dark: #b78649;
     --beige-color: #ebe8de;
@@ -166,7 +168,7 @@ main{
     font-weight: 500;
     cursor: pointer;
 }
-
+/* 
 .reviwe-box-container{
     display: grid;
     grid-template-rows: repeat(3, 25%);
@@ -266,7 +268,7 @@ main{
 }
 .grey-dot{
     color: #acacac;
-}
+} */
  footer{
      bottom: 0;
      width: 100%;
@@ -429,17 +431,11 @@ main{
         font-weight: 400;
         margin-bottom: 3em;
     }
-    .reviwe-box2,
+    /* .reviwe-box2,
     .reviwe-box3{
         display: block;
         opacity: 1;
         visibility: visible;
-    }
-     .footer-grid-container{
-        grid-template-columns: repeat(4, auto);
-        gap: 4em;
-        max-width: 1000px;
-        margin: auto;
     }
     .reviwe-box-container{
         grid-template-columns: repeat(3, 23%);
@@ -451,7 +447,13 @@ main{
         visibility: visible;
         display: none;
     }
-   
+    */
+    .footer-grid-container{
+        grid-template-columns: repeat(4, auto);
+        gap: 4em;
+        max-width: 1000px;
+        margin: auto;
+    }
     .icon-container{
         gap: 1.6em;
     }
