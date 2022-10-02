@@ -301,10 +301,12 @@ main{
 .reviwe-box-container{
     display: grid;
     grid-template-rows: repeat(3, 25%);
+    grid-template-rows: 1fr;
     flex-wrap: wrap;
     gap: 1.5em 4em;
     margin: 0 auto;
     justify-content: center;
+    margin-bottom: 1em;
 }
 .checked{
     color: var(--gold-color-dark);
