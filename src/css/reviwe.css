@@ -77,10 +77,6 @@
     color: var(--grey-color-light);
 }
 .img-reviwe{
-    /* border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    object-fit: cover; */
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -91,13 +87,6 @@
 .stars-container{
  margin-left: 7em;
 }
-.customer-container{
-    /* display: flex;
-    flex-direction: row;
-    gap: 1em;
-    align-items: center; */
-}
-
 .reviwe-circle-container{
     display: flex;
     flex-direction: row;
