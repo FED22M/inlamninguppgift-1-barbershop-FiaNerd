@@ -78,7 +78,8 @@
         align-items: center;
         justify-content: center;
         margin: 4em auto;
-        width: 90%;
+        width: 70%;
+        gap: 5em;
     }
     .text-about-container{
         width: 80%;
@@ -149,11 +150,11 @@
         height: 80vh;
     }
     .about-container{
-        width: 90%;
+        width: 80%;
     }
-    .text-about-container{
+    /* .text-about-container{
         width: 80%
-    }
+    } */
     .about-text{
         max-width: 90%;
     }

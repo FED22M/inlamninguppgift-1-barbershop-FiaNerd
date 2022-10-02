@@ -4,7 +4,7 @@
     grid-template-rows: repeat(3, 25%);
     grid-template-rows: 1fr;
     flex-wrap: wrap;
-    gap: 1.5em 4em;
+    gap: 1.5em 2em;
     margin: 0 auto;
     justify-content: center;
     margin-bottom: 1em;
@@ -115,9 +115,9 @@
         visibility: visible;
     }
     .reviwe-box-container{
-        grid-template-columns: repeat(3, 28%);
+        grid-template-columns: repeat(3, auto);
         gap: 2em;
-        margin-bottom: 2em;
+        margin: 0 1em 2em 1em;
     }
 
     .reviwe-circle-container{
