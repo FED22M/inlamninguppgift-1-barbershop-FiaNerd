@@ -115,17 +115,6 @@ main{
     background-size: cover;
     background-position: center;
 }
-/* .banner-container::before{
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(rgba(37, 20, 20, 0.665), rgba(0, 0, 0, 0.786), rgba(0, 0, 1, 0.487)), url(/src/img/barbershop.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-} */
 .banner-text-content {
     display: flex;
     flex-direction: column;
