@@ -1,0 +1,137 @@
+
+.reviwe-box-container{
+    display: grid;
+    grid-template-rows: repeat(3, 25%);
+    grid-template-rows: 1fr;
+    flex-wrap: wrap;
+    gap: 1.5em 2em;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.checked{
+    color: var(--gold-color-dark);
+    font-size: 0.8em;
+}
+.reviwe-customer{
+    text-transform: uppercase;
+    color: var(--gold-color-dark);
+    font-size: 0.8rem;
+}
+.reviwe-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.reviwe-title{
+    color: var(--gold-color);
+    font-family: var(--headlines);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 2em;
+}
+.reviwe-big-title{
+    color:var(--grey-color-dark);
+    font-family: var(--headlines);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 1.9em;
+}
+.reviwe-big-title span{
+    display: block;
+    text-align: center;
+}
+.fa-quote-left{
+    color: var(--white-color);
+    background-color: #be925b;
+    font-size: 0.9em;
+    padding: 0.9em 0.9em;
+    border-radius: 100%;
+    text-align: center;
+    position: absolute;
+    margin-top: -40px;
+}
+.reviwe-box1,
+.reviwe-box2,
+.reviwe-box3{
+    background-color: var(--white-color);
+    padding: 1.2em 1.2em;
+    border-radius: 7px;
+    position: relative;
+    max-width: 22em;
+}
+.reviwe-box2,
+.reviwe-box3{
+    display: none;
+    visibility: none;
+    opacity: 0;
+}
+.text-review{
+    font-size: 0.8rem;
+    padding: 0.4em 0 1.1em 0;
+    color: var(--grey-color-light);
+}
+.img-reviwe{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.customer-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+}
+
+.reviwe-circle-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1em;
+    gap: 0.5em;
+    visibility: visible;
+}
+.orange-dot{
+    color: var(--gold-color);
+}
+.grey-dot{
+    color: #acacac;
+}
+
+@media screen and (min-width: 740px){
+    .img-reviwe{
+        width: 70px;
+        height: 70px;
+    }
+    .reviwe-box2,
+    .reviwe-box3{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+    .reviwe-box-container{
+        grid-template-columns: repeat(3, auto);
+        gap: 2em;
+        margin: 0 1em 2em 1em;
+    }
+
+    .reviwe-circle-container{
+        visibility: visible;
+        display: none;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .reviwe-title{
+        font-size: 1.6rem;
+    }
+    .reviwe-big-title{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}

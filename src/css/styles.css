@@ -1,3 +1,7 @@
+@import "/src/css/service.css";
+@import "/src/css/about.css";
+@import "/src/css/reviwe.css";
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +12,7 @@
     --white-color:#fff;
     --black-color: #0a0600;
     --grey-color-dark: #1d1b1a;
+    --grey-color-light: #656565;
     --gold-color: #bf925b;
     --gold-color-dark: #b78649;
     --beige-color: #ebe8de;
@@ -15,11 +20,12 @@
 
     /* Fonts: */
     --headlines: 'Barlow Semi Condensed', sans-serif;
+    --primary-font: 'Poppins', sans-serif;
 }
 html,
 body{
     width: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--primary-font);
 }
 .wrapper{
     height:100vh;
@@ -38,7 +44,7 @@ header{
     position: fixed;
     width: 100vw;
     align-items: center;
-    background-color:rgba(10, 6, 0, 0.5);;
+    background-color:rgba(10, 6, 0);;
     height: 4em;
     top: 0;
     z-index: 2;
@@ -96,43 +102,48 @@ main{
 }
 .banner-container{
     display: flex;
+    flex-direction: column;
     position: relative;
     width: 100vw;
     height: 100vh;
 }
 .banner-container::before{
     content: "";
-    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(rgba(33, 6, 6, 0.665), rgba(0, 0, 0, 0.786), rgba(0, 0, 1, 0.487)), url(/src/img/barbershop.jpg);
+    background-image: linear-gradient(rgba(37, 20, 20, 0.665), rgba(0, 0, 0, 0.786), rgba(0, 0, 1, 0.487)), url(/src/img/barbershop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* filter: brightness(35%); */
 }
-
 .banner-text-content {
-    position: relative;
-    margin-top: 15em;
-    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2.6em;
+    position: absolute;
+    top: 38%;
+    left: 4%;
+    right: 2%;
+    max-width:550px;
 }
 .title-banner{
     font-family: var(--headlines);
+    font-family: var(--);
     color: var(--gold-color);
-    font-size: 1.36rem;
+    font-size: 1.05rem;
     text-transform: uppercase;
+    margin-bottom: -2em;
 }
 .banner-headline{
     font-family: var(--headlines);
     color: var(--white-color);
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 900;
     display: block;
-    margin-bottom: 0.4em;
+    margin-bottom: -1.3rem;
 }
 .banner-headline > span{
     -webkit-text-fill-color: transparent;
@@ -140,15 +151,12 @@ main{
 }
 .banner-text{
     color: var(--white-color);
-    position: absolute;
     align-items:center;
     justify-content: center;
     font-weight: 200;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.5em;
-}
-.banner-link-container{
-    margin-top: 12em;
+    margin-bottom: 2.2em;
 }
 .banner-link{
     color: var(--gold-color);;
@@ -159,217 +167,6 @@ main{
     font-weight: 500;
     cursor: pointer;
 }
-
-.service-container{
-    display: flex;
-    flex-direction: column;
-    /* align-items: center;
-    text-align: center;
-    justify-content: center; */
-    margin-bottom: 2em;
-    position: relative;
-}
-
-.box1,
-.box3{
-    display: flex;
-    flex-direction: column;
-    height: 22em;
-    background-color: var(--gold-color);
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-.box2,
-.box4{
-    display: flex;
-    flex-direction: column;
-    height: 22em;
-    background-color: var(--gold-color-dark);
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-.box-title,
-.box-title,
-.box-title
-.box-title{
-    text-transform: uppercase;
-    font-family: var(--headlines);
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--white-color);
-    line-height: 2em;
-    max-width: 90%;
-}
-.box-text,
-.box-text,
-.box-text
-.box-text{
-    color: var(--white-color);
-    line-height: 2em;
-    max-width: 90%;
-}
-.barber-img1,
-.barber-img2,
-.barber-img3,
-.barber-img4{
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    margin-top: -380px;
-}
-
-
-.about-container{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 0 auto;
-    gap: 2em;
-    margin-bottom: 8em;
-}
-.image-about-container{
-    display: flex;
-}
-
-.img-about {
-    display: flex;
-    object-fit: cover;
-    width: 100%;
-    height: 40vh;
-}
-
-.about-title{
-    font-family: var(--headlines);
-    color: var(--gold-color);
-    font-weight: 600;
-    text-transform: uppercase;
-    gap: 2em;
-}
-.about-subtitle{
-    font-weight: var(--headlines);
-    color: var(--grey-color-dark);
-    font-size: 1.2rem;
-    text-transform:uppercase;
-    font-weight: 700;
-}
- .about-text{
-   margin-bottom: 2.5em;
-}
-.about-calender-container{
-    display: flex;
-    flex-direction: row;
-    background-color: var(--gold-color);
-    gap: 1em;
-    width: 70%;
-    padding: 1em;
-    align-items: center;
-}
-.fa-calendar{
-    font-size: 2.1rem;
-    background-color: #b6b5b4;
-    height: 3%;
-    border-radius: 50%;
-    vertical-align: middle;
-    padding: 0.5em;
-}
- .calender-text {
-    text-transform: uppercase;
-    color: var(--white-color);
-    font-weight: 600;
-}
-.years{
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1em;
-}
-.experience{
-    line-height: 1.2em;
-    display: block;
-    line-height: 0.5em;
-}
-
-.reviwe-box-container{
-    display: grid;
-    grid-template-rows: repeat(3, 25%);
-    flex-wrap: wrap;
-    gap: 4em;
-    margin: 0 auto;
-    justify-content: center;
-}
-.checked{
-    color: var(--gold-color-dark);
-    font-size: 0.8em;
-}
-.reviwe-customer{
-    text-transform: uppercase;
-    color: var(--gold-color-dark);
-    font-size: 0.8rem;
-}
-.reviwe-container{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-.reviwe-title{
-    color: var(--gold-color);
-    font-family: var(--headlines);
-    text-transform: uppercase;
-    font-weight: 500;
-}
-.reviwe-big-title{
-    color:var(--grey-color-dark);
-    font-family: var(--headlines);
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 1.8em;
-}
-.reviwe-big-title span{
-    display: block;
-    text-align: center;
-}
-.fa-quote-left{
-    color: var(--white-color);
-    background-color: #be925b;
-    font-size: 0.9em;
-    padding: 0.9em 0.9em;
-    border-radius: 100%;
-    text-align: center;
-    position: absolute;
-    margin-top: -40px;
-}
-.reviwe-box{
-    background-color: var(--white-color);
-    padding: 1.2em 1.2em;
-    border-radius: 7px;
-    position: relative;
-    height: 13em;
-    max-width: 20em;
-}
-.text-review{
-    font-size: 0.8rem;
-    padding: 0.4em 0 1.1em 0;
-}
-.img-reviwe{
-    border-radius: 50%;
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
-}
-.customer-container{
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-}
-
  footer{
      bottom: 0;
      width: 100%;
@@ -379,7 +176,7 @@ main{
     color: var(--white-color);
     display: grid;
     grid-template-columns: repeat(3, 10%);
-    padding-top: 1em;
+    /* padding-top: 1em; */
     gap: 1.2em;
 }
 .fa-twitter,
@@ -396,13 +193,11 @@ main{
 }
 .footer-grid-container{
     display: grid;
-    grid-template-rows: auto auto auto;
-    margin: 0 1em;
-    padding-bottom: 2em;
+    margin: 2em 1em;
 }
 .footer-grid-container h3{
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 700;
     font-family: var(--headlines);
     color: var(--white-color);
@@ -427,22 +222,41 @@ main{
     gap: 1em;
     justify-content: flex-start;
     align-items: center;
-    line-height: 2em;
 }
+
 .fa-map,
 .fa-phone,
-.fa-paper-plane{
+.fa-paper-plane
+{
     color: var(--gold-color);
 }
-.icon-text{
-    color: #b6b5b4;
+.fa-map{
+    margin-top: -1.3em;
 }
+
+.icon-text-map,
+.icon-text-phone,
+.icon-text-plane{
+    color: #b6b5b4;
+    line-height: 2em;
+}
+.icon-text-map{
+    line-height: 1.4em;
+    margin-bottom: 0.5em;
+}
+
 
 /* DESKTOP */
 .footer-desktop-barbershop {
     color:#86817f;
     display: none;
     visibility: hidden;
+ }
+
+ @media screen and (min-width: 500px) {
+    .banner-headline{
+        font-size: 2.3rem;
+    }
  }
 
 @media screen and (max-width:740px){
@@ -490,49 +304,90 @@ main{
 
 @media screen and (min-width: 740px)
 {
-    .service-container{
-        flex-direction: row;
+    header{
+        background-color:rgba(10, 6, 0, 0.5);
     }
-    .img-container{
-        flex-direction: row;
-        left: 0;
-        gap: 6em;
-        top: 46em;
-        justify-content: space-evenly;
+    .nav-container{
+        background-color: rgba(51, 51, 51, 0.5);
+        outline: 2px dashed rgba(51, 51, 51, 0.5);
     }
-    .box-title{
-        margin-top: 45px;
+    .banner-text-content{
+        max-width: 40em;
+        gap: 3.2em;
+        margin: 0 auto;
+        top: 22vh;
     }
-    .about-container{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+    .title-banner{
+        font-size: 1.2rem;
+        font-family: var(--headlines);
     }
-    .text-about-container{
-        width: 50%;
+    .banner-headline{
+        font-size: 3rem;
+        font-weight: 700;
     }
-    .img-about{
-        width: 50vh;
-        height: 60vh;
+    .wrapper-text-banner{
+        border-left: 2px solid var(--gold-color) ;
+        padding-left: 5em;
+        max-width: 80%;
     }
-     .footer-grid-container{
+    .banner-text{
+        font-weight: 400;
+        margin-bottom: 3em;
+    }
+    .footer-grid-container{
         grid-template-columns: repeat(4, auto);
-        gap: 4em;
-        max-width: 1000px;
-        margin: auto;
+        gap: 2em;
+        max-width: 90%;
+        margin: auto auto 1.5em auto;
     }
-    .reviwe-box-container{
-        grid-template-columns: repeat(3, 23%);
-        gap: 1em;
-    }
-   
     .icon-container{
-        gap: 1.8em;
+        gap: 1.6em;
+    }
+    .icon-list li {
+        align-items: center;
     }
     .footer-desktop-barbershop{
        color:#86817f;
        visibility: visible;
        display: block;
+       margin-bottom: 1em;
     }
+}
+@media screen and (min-width: 950px){
+      .banner-text-content{
+        margin-left: 30vw;
+    }
+}
+@media screen and (min-width: 1060px) {
+    .banner-text-content{
+        margin-left: 30vw;
+        max-width: 90%;
+    }
+    .banner-headline{
+      font-size: 3.3rem;
+    }
+  .footer-grid-container{
+    width: 85%;
+    gap: 4em;
+  }   
+}
+@media screen and (min-width: 1160px) {
+  .footer-grid-container{
+    width: 85%;
+  }   
+  .banner-text-content{
+    margin-left: 35vw;
+}
+}
+@media screen and (min-width: 1260px) {
+    .banner-text-content{
+        margin-left: 40vw;
+    }
+
+}
+@media screen and (min-width: 1300px) {
+    .banner-text-content{
+        margin-left: 46vw;
+    }
+
 }
