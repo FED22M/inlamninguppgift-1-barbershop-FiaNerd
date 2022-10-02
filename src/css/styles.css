@@ -390,12 +390,13 @@ main{
     width: 100%;
     margin-bottom: 1em;
     gap: 0.5em;
+    visibility: visible;
 }
 .orange-dot{
     color: var(--gold-color);
 }
 .grey-dot{
-    color: #949493;
+    color: #acacac;
 }
  footer{
      bottom: 0;
@@ -608,6 +609,12 @@ main{
     .reviwe-box-container{
         grid-template-columns: repeat(3, 23%);
         gap: 2em;
+        margin-bottom: 3em;
+    }
+
+    .reviwe-circle-container{
+        visibility: visible;
+        display: none;
     }
    
     .icon-container{
