@@ -609,7 +609,7 @@ main{
     .reviwe-box-container{
         grid-template-columns: repeat(3, 23%);
         gap: 2em;
-        margin-bottom: 3em;
+        margin-bottom: em;
     }
 
     .reviwe-circle-container{
@@ -626,3 +626,4 @@ main{
        display: block;
     }
 }
+
