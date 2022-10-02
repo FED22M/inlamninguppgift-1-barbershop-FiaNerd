@@ -12,7 +12,9 @@
 .checked{
     color: var(--gold-color-dark);
     font-size: 0.8em;
+    margin-top: 1.5em;
 }
+
 .reviwe-customer{
     text-transform: uppercase;
     color: var(--gold-color-dark);
@@ -75,16 +77,25 @@
     color: var(--grey-color-light);
 }
 .img-reviwe{
+    /* border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover; */
     border-radius: 50%;
     width: 100px;
     height: 100px;
     object-fit: cover;
+    float: left;
+}
+
+.stars-container{
+ margin-left: 7em;
 }
 .customer-container{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     gap: 1em;
-    align-items: center;
+    align-items: center; */
 }
 
 .reviwe-circle-container{
@@ -105,8 +116,8 @@
 
 @media screen and (min-width: 740px){
     .img-reviwe{
-        width: 70px;
-        height: 70px;
+        width: 100px;
+        height: 100px;
     }
     .reviwe-box2,
     .reviwe-box3{
