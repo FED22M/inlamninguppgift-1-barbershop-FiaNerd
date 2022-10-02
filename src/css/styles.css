@@ -1,4 +1,6 @@
 @import "service.css";
+@import "about.css";
+
 *{
     margin: 0;
     padding: 0;
@@ -164,71 +166,7 @@ main{
     font-weight: 500;
     cursor: pointer;
 }
-/* .service-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 2em;
-    position: relative;
-}
-.box1,
-.box3{
-    display: flex;
-    flex-direction: column;
-    height: 23em;
-    background-color: var(--gold-color);
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-.box2,
-.box4{
-    display: flex;
-    flex-direction: column;
-    height: 23em;
-    background-color: var(--gold-color-dark);
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-
-.box-title,
-.box-title,
-.box-title
-.box-title{
-    text-transform: uppercase;
-    font-family: var(--headlines);
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--white-color);
-    line-height: 2em;
-    max-width: 90%;
-}
-.box-text,
-.box-text,
-.box-text
-.box-text{
-    color: var(--white-color);
-    line-height: 2em;
-    max-width: 90%;
-}
-.barber-img1,
-.barber-img2,
-.barber-img3,
-.barber-img4{
-    border-radius: 50%;
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    margin-top: -365px;
-} */
-
-
+/* 
 .about-container{
     display: flex;
     flex-direction: column;
@@ -297,7 +235,7 @@ main{
     line-height: 1.2em;
     display: block;
     line-height: 0.5em;
-}
+} */
 
 .reviwe-box-container{
     display: grid;
@@ -561,27 +499,7 @@ main{
         font-weight: 400;
         margin-bottom: 3em;
     }
-    /* .service-container{
-        flex-direction: row;
-    }
-    .barber-img1,
-    .barber-img2,
-    .barber-img3,
-    .barber-img4{
-        border-radius: 50%;
-        width: 150px;
-        height: 150px;
-}
-    .img-container{
-        flex-direction: row;
-        left: 0;
-        gap: 6em;
-        top: 46em;
-        justify-content: space-evenly;
-    }
-    .box-title{
-        margin-top: 45px;
-    } */
+   
     .about-container{
         display: flex;
         flex-direction: row;
