@@ -34,7 +34,7 @@
 .box-title{
     text-transform: uppercase;
     font-family: var(--headlines);
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     color: var(--white-color);
     line-height: 2em;

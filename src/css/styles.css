@@ -166,76 +166,6 @@ main{
     font-weight: 500;
     cursor: pointer;
 }
-/* 
-.about-container{
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 0 auto;
-    gap: 2em;
-    margin-bottom: 5em;
-}
-.image-about-container{
-    display: flex;
-}
-
-.img-about {
-    display: flex;
-    object-fit: cover;
-    width: 100%;
-    height: 40vh;
-}
-
-.about-title{
-    font-family: var(--headlines);
-    color: var(--gold-color);
-    font-weight: 600;
-    text-transform: uppercase;
-    gap: 2em;
-}
-.about-subtitle{
-    font-weight: var(--headlines);
-    color: var(--grey-color-dark);
-    font-size: 1.2rem;
-    text-transform:uppercase;
-    font-weight: 700;
-}
- .about-text{
-   margin-bottom: 2.5em;
-}
-.about-calender-container{
-    display: flex;
-    flex-direction: row;
-    background-color: var(--gold-color);
-    gap: 1em;
-    width: 70%;
-    padding: 1em;
-    align-items: center;
-}
-.fa-calendar{
-    font-size: 2.1rem;
-    background-color: #b6b5b4;
-    height: 3%;
-    border-radius: 50%;
-    vertical-align: middle;
-    padding: 0.5em;
-}
-.calender-text {
-    text-transform: uppercase;
-    color: var(--white-color);
-    font-weight: 600;
-}
-.years{
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1em;
-}
-.experience{
-    line-height: 1.2em;
-    display: block;
-    line-height: 0.5em;
-} */
 
 .reviwe-box-container{
     display: grid;
@@ -498,20 +428,6 @@ main{
     .banner-text{
         font-weight: 400;
         margin-bottom: 3em;
-    }
-   
-    .about-container{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    .text-about-container{
-        width: 50%;
-    }
-    .img-about{
-        width: 50vh;
-        height: 60vh;
     }
     .reviwe-box2,
     .reviwe-box3{
