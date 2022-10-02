@@ -106,9 +106,6 @@ main{
     position: relative;
     width: 100vw;
     height: 100vh;
-}
-.banner-container::before{
-    content: "";
     top: 0;
     left: 0;
     width: 100vw;
@@ -118,6 +115,17 @@ main{
     background-size: cover;
     background-position: center;
 }
+/* .banner-container::before{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(37, 20, 20, 0.665), rgba(0, 0, 0, 0.786), rgba(0, 0, 1, 0.487)), url(/src/img/barbershop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
 .banner-text-content {
     display: flex;
     flex-direction: column;
@@ -176,7 +184,6 @@ main{
     color: var(--white-color);
     display: grid;
     grid-template-columns: repeat(3, 10%);
-    /* padding-top: 1em; */
     gap: 1.2em;
 }
 .fa-twitter,
@@ -212,9 +219,9 @@ main{
     line-height: 2.2em;
     grid-gap: 0.5em;
 }
-.fa-angle-right{
-    font-size: 1.4rem;
-    font-weight: 900;
+.footer-info > li::before{
+    content: ">";
+    font-weight: 600;
 }
 .icon-list li{
     display: grid;
