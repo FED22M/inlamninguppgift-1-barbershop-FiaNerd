@@ -168,107 +168,6 @@ main{
     font-weight: 500;
     cursor: pointer;
 }
-/* 
-.reviwe-box-container{
-    display: grid;
-    grid-template-rows: repeat(3, 25%);
-    grid-template-rows: 1fr;
-    flex-wrap: wrap;
-    gap: 1.5em 4em;
-    margin: 0 auto;
-    justify-content: center;
-    margin-bottom: 1em;
-}
-.checked{
-    color: var(--gold-color-dark);
-    font-size: 0.8em;
-}
-.reviwe-customer{
-    text-transform: uppercase;
-    color: var(--gold-color-dark);
-    font-size: 0.8rem;
-}
-.reviwe-container{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-.reviwe-title{
-    color: var(--gold-color);
-    font-family: var(--headlines);
-    text-transform: uppercase;
-    font-weight: 500;
-}
-.reviwe-big-title{
-    color:var(--grey-color-dark);
-    font-family: var(--headlines);
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 1.8em;
-}
-.reviwe-big-title span{
-    display: block;
-    text-align: center;
-}
-.fa-quote-left{
-    color: var(--white-color);
-    background-color: #be925b;
-    font-size: 0.9em;
-    padding: 0.9em 0.9em;
-    border-radius: 100%;
-    text-align: center;
-    position: absolute;
-    margin-top: -40px;
-}
-.reviwe-box1,
-.reviwe-box2,
-.reviwe-box3{
-    background-color: var(--white-color);
-    padding: 1.2em 1.2em;
-    border-radius: 7px;
-    position: relative;
-    height: 13em;
-    max-width: 20em;
-}
-.reviwe-box2,
-.reviwe-box3{
-    display: none;
-    visibility: none;
-    opacity: 0;
-}
-.text-review{
-    font-size: 0.8rem;
-    padding: 0.4em 0 1.1em 0;
-}
-.img-reviwe{
-    border-radius: 50%;
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
-}
-.customer-container{
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-}
-
-.reviwe-circle-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 1em;
-    gap: 0.5em;
-    visibility: visible;
-}
-.orange-dot{
-    color: var(--gold-color);
-}
-.grey-dot{
-    color: #acacac;
-} */
  footer{
      bottom: 0;
      width: 100%;
@@ -278,7 +177,7 @@ main{
     color: var(--white-color);
     display: grid;
     grid-template-columns: repeat(3, 10%);
-    padding-top: 1em;
+    /* padding-top: 1em; */
     gap: 1.2em;
 }
 .fa-twitter,
@@ -295,8 +194,7 @@ main{
 }
 .footer-grid-container{
     display: grid;
-    margin: 0 1em;
-    padding-bottom: 2em;
+    margin: 2em 1em;
 }
 .footer-grid-container h3{
     text-transform: uppercase;
@@ -431,36 +329,33 @@ main{
         font-weight: 400;
         margin-bottom: 3em;
     }
-    /* .reviwe-box2,
-    .reviwe-box3{
-        display: block;
-        opacity: 1;
-        visibility: visible;
-    }
-    .reviwe-box-container{
-        grid-template-columns: repeat(3, 23%);
-        gap: 2em;
-        margin-bottom: em;
-    }
-
-    .reviwe-circle-container{
-        visibility: visible;
-        display: none;
-    }
-    */
     .footer-grid-container{
         grid-template-columns: repeat(4, auto);
-        gap: 4em;
-        max-width: 1000px;
-        margin: auto;
+        gap: 2em;
+        max-width: 90%;
+        margin: auto auto 1.5em auto;
     }
     .icon-container{
         gap: 1.6em;
+    }
+    .icon-list li {
+        align-items: center;
     }
     .footer-desktop-barbershop{
        color:#86817f;
        visibility: visible;
        display: block;
+       margin-bottom: 1em;
     }
 }
-
+@media screen and (min-width: 1060px) {
+  .footer-grid-container{
+    width: 85%;
+    gap: 4em;
+  }   
+}
+@media screen and (min-width: 11260px) {
+  .footer-grid-container{
+    width: 85%;
+  }   
+}
