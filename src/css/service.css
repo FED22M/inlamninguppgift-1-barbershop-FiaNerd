@@ -1,0 +1,158 @@
+.service-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 2em;
+    position: relative;
+}
+.box1,
+.box3{
+    display: flex;
+    flex-direction: column;
+    height: 23em;
+    background-color: var(--gold-color);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.box2,
+.box4{
+    display: flex;
+    flex-direction: column;
+    height: 23em;
+    background-color: var(--gold-color-dark);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.box-title,
+.box-title,
+.box-title
+.box-title{
+    text-transform: uppercase;
+    font-family: var(--headlines);
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--white-color);
+    line-height: 2em;
+    max-width: 90%;
+}
+.box-text,
+.box-text,
+.box-text
+.box-text{
+    color: var(--white-color);
+    line-height: 2em;
+    max-width: 90%;
+}
+.barber-img1,
+.barber-img2,
+.barber-img3,
+.barber-img4{
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -365px;
+}
+
+@media screen and (min-width: 740px){
+    .service-container{
+        flex-direction: row;
+    }
+    .barber-img1,
+    .barber-img2,
+    .barber-img3,
+    .barber-img4{
+        border-radius: 50%;
+        width: 110px;
+        height: 110px;
+}
+    .img-container{
+        flex-direction: row;
+        left: 0;
+        gap: 6em;
+        top: 46em;
+        justify-content: space-evenly;
+    }
+    .box-title{
+        font-size: 1.2rem;
+        margin-top: 2.9em;
+    }
+    .box-text{
+
+    }
+}
+
+
+@media screen and (min-width: 960px){
+    .service-container{
+        flex-direction: row;
+    }
+    .box-title{
+        font-size: 1.4rem;
+    }
+    .barber-img1,
+    .barber-img2,
+    .barber-img3,
+    .barber-img4{
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+@media screen and (min-width: 1120px){
+    .service-container{
+        flex-direction: row;
+    }
+    .barber-img1,
+    .barber-img2,
+    .barber-img3,
+    .barber-img4{
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+    }
+    .img-container{
+        flex-direction: row;
+        left: 0;
+        gap: 6em;
+        top: 46em;
+        justify-content: space-evenly;
+    }
+    .box-title{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    .service-container{
+        flex-direction: row;
+    }
+    .barber-img1,
+    .barber-img2,
+    .barber-img3,
+    .barber-img4{
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+    }
+    .img-container{
+        flex-direction: row;
+        left: 0;
+        gap: 6em;
+        top: 46em;
+        justify-content: space-evenly;
+    }
+    .box-title{
+        font-size: 2.2rem;
+    }
+}
